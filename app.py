@@ -15,6 +15,8 @@ class Onibus:
     def rotaOnibus(self):
 
         return 'Rota: {}'.format(self.rota)
+        
+        
 
 
 class Ponto:
@@ -434,11 +436,9 @@ while(rodar):
     elif value == 20:
         nome = input("Digigta o nome do fiscal que deseja excluir: ")
         deletarFiscal(nome)
-
-
-
-
-
     
-    if value == 21:
+    elif value == 21:
         rodar = False 
+
+    else:
+        print("Valor não reconhecido.")
